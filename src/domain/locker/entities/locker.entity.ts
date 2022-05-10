@@ -11,7 +11,6 @@ export default class Locker {
   available: boolean;
 
   constructor(props: LockerProps) {
-    console.log(props);
     this.name = props.name;
     this.size = props.size;
     this.available = false;
