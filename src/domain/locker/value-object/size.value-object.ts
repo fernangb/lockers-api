@@ -1,9 +1,9 @@
-export default interface SizeProps {
+interface SizeProps {
   name: string;
   initials: string;
 }
 
-export class Size {
+export default class Size {
   name: string;
   initials: string;
 

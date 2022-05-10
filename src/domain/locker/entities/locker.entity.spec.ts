@@ -1,5 +1,5 @@
-import { Size } from '../value-object/size.value-object';
-import { Locker } from './locker.entity';
+import Size from '../value-object/size.value-object';
+import Locker from './locker.entity';
 
 describe('Locker Unit Tests', () => {
   const smallLockerSize = new Size({

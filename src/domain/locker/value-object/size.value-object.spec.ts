@@ -1,4 +1,4 @@
-import { Size } from './size.value-object';
+import Size from './size.value-object';
 
 describe('Locker size value object Unit Tests', () => {
   it('should throw error when name is empty', () => {

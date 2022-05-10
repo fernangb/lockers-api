@@ -1,11 +1,11 @@
-import { Size } from '../value-object/size.value-object';
+import Size from '../value-object/size.value-object';
 
-export default interface LockerProps {
+interface LockerProps {
   name: string;
   size: Size;
 }
 
-export class Locker {
+export default class Locker {
   name: string;
   size: Size;
   available: boolean;
