@@ -1,11 +1,13 @@
+import { Size } from '../value-object/size.value-object';
+
 export default interface LockerProps {
   name: string;
-  size: string;
+  size: Size;
 }
 
 export class Locker {
   name: string;
-  size: string;
+  size: Size;
   available: boolean;
 
   constructor(props: LockerProps) {
@@ -18,11 +20,6 @@ export class Locker {
 
   private validate() {
     if (this.name.length === 0) throw new Error('[Locker] Name is required');
-    if (this.size.length === 0) throw new Error('[Locker] Size is required');
-
-    const validSizes = ['P', 'G'];
-
-    if (!validSizes.includes(this.size))
-      throw new Error('[Locker] Invalid size');
+    if (this.size === undefined) throw new Error('[Locker] Size is required');
   }
 }
