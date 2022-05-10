@@ -28,7 +28,7 @@ describe('Locker size value object Unit Tests', () => {
     }).toThrowError('[Size] Initials is invalid');
   });
 
-  it('should be able to create a locker size with lower case', () => {
+  it('should be able to create a locker size with initials as lower case', () => {
     const locker_size = new Size({
       name: 'small',
       initials: 'p',
@@ -38,7 +38,7 @@ describe('Locker size value object Unit Tests', () => {
     expect(locker_size.initials).toBe('P');
   });
 
-  it('should be able to create a locker size with upper case', () => {
+  it('should be able to create a locker size with initials as upper case', () => {
     const locker_size = new Size({
       name: 'small',
       initials: 'P',
