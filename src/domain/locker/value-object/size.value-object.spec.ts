@@ -7,7 +7,7 @@ describe('Locker size value object Unit Tests', () => {
         name: '',
         initials: 'P',
       });
-    }).toThrowError('[Size] Name is required');
+    }).toThrowError('Name is required');
   });
 
   it('should throw error when initials is empty', () => {
@@ -16,7 +16,7 @@ describe('Locker size value object Unit Tests', () => {
         name: 'Size 1',
         initials: '',
       });
-    }).toThrowError('[Size] Initials is required');
+    }).toThrowError('Initials is required');
   });
 
   it('should throw error when initials is invalid', () => {
@@ -25,7 +25,7 @@ describe('Locker size value object Unit Tests', () => {
         name: 'Size 1',
         initials: 'size',
       });
-    }).toThrowError('[Size] Initials is invalid');
+    }).toThrowError('Initials is invalid');
   });
 
   it('should be able to create a locker size with initials as lower case', () => {

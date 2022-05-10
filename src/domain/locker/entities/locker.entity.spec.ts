@@ -17,7 +17,7 @@ describe('Locker Unit Tests', () => {
         name: '',
         size: smallLockerSize,
       });
-    }).toThrowError('[Locker] Name is required');
+    }).toThrowError('Name is required');
   });
 
   it('should throw error when size is empty', () => {
@@ -28,7 +28,7 @@ describe('Locker Unit Tests', () => {
         name: 'Locker 1',
         size,
       });
-    }).toThrowError('[Locker] Size is required');
+    }).toThrowError('Size is required');
   });
 
   it('should be able to create a small locker', () => {

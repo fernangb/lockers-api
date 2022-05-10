@@ -14,13 +14,12 @@ export default class Size {
   }
 
   private validate() {
-    if (this.name.length === 0) throw new Error('[Size] Name is required');
-    if (this.initials.length === 0)
-      throw new Error('[Size] Initials is required');
+    if (this.name.length === 0) throw new Error('Name is required');
+    if (this.initials.length === 0) throw new Error('Initials is required');
 
     const max_initials_size = 3;
 
     if (this.initials.length > max_initials_size)
-      throw new Error('[Size] Initials is invalid');
+      throw new Error('Initials is invalid');
   }
 }

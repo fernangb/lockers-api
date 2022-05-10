@@ -13,7 +13,7 @@ describe('Price value object Unit Tests', () => {
         size: undefined,
         value: 10,
       });
-    }).toThrowError('[Price] Size is required');
+    }).toThrowError('Size is required');
   });
 
   it('should throw error when value is empty', () => {
@@ -22,7 +22,7 @@ describe('Price value object Unit Tests', () => {
         size,
         value: undefined,
       });
-    }).toThrowError('[Price] Value is required');
+    }).toThrowError('Value is required');
   });
 
   it('should throw error when value is less than zero', () => {
@@ -31,7 +31,7 @@ describe('Price value object Unit Tests', () => {
         size,
         value: -10,
       });
-    }).toThrowError('[Price] Value cannot be less than zero');
+    }).toThrowError('Value cannot be less than zero');
   });
 
   it('should be able to create a price', () => {

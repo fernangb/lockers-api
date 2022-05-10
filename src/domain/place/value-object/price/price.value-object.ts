@@ -17,9 +17,8 @@ export default class Price {
   }
 
   private validate() {
-    if (this.size === undefined) throw new Error('[Price] Size is required');
-    if (this.value === undefined) throw new Error('[Price] Value is required');
-    if (this.value < 0)
-      throw new Error('[Price] Value cannot be less than zero');
+    if (this.size === undefined) throw new Error('Size is required');
+    if (this.value === undefined) throw new Error('Value is required');
+    if (this.value < 0) throw new Error('Value cannot be less than zero');
   }
 }

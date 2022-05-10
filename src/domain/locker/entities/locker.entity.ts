@@ -19,7 +19,7 @@ export default class Locker {
   }
 
   private validate() {
-    if (this.name.length === 0) throw new Error('[Locker] Name is required');
-    if (this.size === undefined) throw new Error('[Locker] Size is required');
+    if (this.name.length === 0) throw new Error('Name is required');
+    if (this.size === undefined) throw new Error('Size is required');
   }
 }
