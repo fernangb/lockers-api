@@ -43,6 +43,7 @@ describe('Place Unit Tests', () => {
       price,
     });
 
+    expect(place.id).toBeDefined();
     expect(place.address).toStrictEqual(address);
     expect(place.price).toStrictEqual(price);
     expect(place.available).toBeFalsy();

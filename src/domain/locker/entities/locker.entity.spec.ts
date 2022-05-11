@@ -37,6 +37,7 @@ describe('Locker Unit Tests', () => {
       size: smallLockerSize,
     });
 
+    expect(locker.id).toBeDefined();
     expect(locker.name).toBe('Locker 1');
     expect(locker.size).toStrictEqual(smallLockerSize);
     expect(locker.available).toBeFalsy();
@@ -48,6 +49,7 @@ describe('Locker Unit Tests', () => {
       size: bigLockerSize,
     });
 
+    expect(locker.id).toBeDefined();
     expect(locker.name).toBe('Locker 1');
     expect(locker.size).toStrictEqual(bigLockerSize);
     expect(locker.available).toBeFalsy();
