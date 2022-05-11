@@ -2,6 +2,7 @@ import Size from './../../../domain/locker/value-object/size.value-object';
 import Address from '../value-object/address/address.value-object';
 import Price from '../value-object/price/price.value-object';
 import Place from './place.entity';
+import Locker from '../../locker/entities/locker.entity';
 
 describe('Place Unit Tests', () => {
   const address = new Address({
